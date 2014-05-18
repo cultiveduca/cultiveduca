@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="font/style.css">
+		<meta charset="utf8">
+		<title>cultivEduca - {title}</title>
+	</head>
+	<body>
+		<div id="conteiner">
+			<div id="header">
+				<a href="./">
+				<img src="icons/top.png" height="120" width="258" id="imgtop" alt="">
+				</a>
+				<div id="texto">
+					<img src="icons/icon0.png" height="48" width="48">
+					<p>Você sabe o nível de escolarização dos professores do seu município?</p>
+				</div>
+				<form method="GET" action="busca">
+						<input type="text" name="busca" placeholder="">
+						<input type="image" src="icons/find2.png">
+					</form>
+			</div>
+			<div id="nav">
+				<ul>
+					<li><a href="./">início</a></li>
+					<li><a href="cidadao">cidadão</a></li>
+					<li><a href="legislacao">legislação</a></li>
+					<li><a href="politicas">políticas públicas</a></li>
+					<li><a href="brasil">mapeamento</a></li>
+					<li><a href="contato">quem somos?</a></li>
+				</ul>
+				<form action="busca" method="get">
+					<select name="busca">
+						<option value="BR">Selecione o Estado</option>
+						<option value='AC'>Acre</option>
+<option value='AL'>Alagoas</option>
+<option value='AP'>Amapá</option>
+<option value='AM'>Amazonas</option>
+<option value='BA'>Bahia</option>
+<option value='CE'>Ceará</option>
+<option value='DF'>Distrito Federal</option>
+<option value='ES'>Espírito Santo</option>
+<option value='GO'>Goiás</option>
+<option value='MA'>Maranhão</option>
+<option value='MT'>Mato Grosso</option>
+<option value='MS'>Mato Grosso do Sul</option>
+<option value='MG'>Minas Gerais</option>
+<option value='PA'>Pará</option>
+<option value='PB'>Paraíba</option>
+<option value='PR'>Paraná</option>
+<option value='PE'>Pernambuco</option>
+<option value='PI'>Piauí</option>
+<option value='RJ'>Rio de Janeiro</option>
+<option value='RN'>Rio Grande do Norte</option>
+<option value='RS'>Rio Grande do Sul</option>
+<option value='RO'>Rondônia</option>
+<option value='RR'>Roraima</option>
+<option value='SC'>Santa Catarina</option>
+<option value='SP'>São Paulo</option>
+<option value='SE'>Sergipe</option>
+<option value='TO'>Tocantins</option>
+					</select>
+					<input type="submit" value="ir">
+				</form>
+				<br style="width: 100%; clear:both;">
+			</div>
+			<br style="width: 100%; clear:both" />
+			<div id="cont">
+				{content}
+			</div>
+			<br style="width: 100%; clear:both" />
+			<div id="footer">
+				2014 // Dados obtidos a partir do educacenso 2013 do INEP.<br>
+				Código fonte disponível em <a href="http://www.github.com/cultiveduca">github.com/cultiveduca</a>
+			</div>
+		</div>
+	</body>
+</html>
